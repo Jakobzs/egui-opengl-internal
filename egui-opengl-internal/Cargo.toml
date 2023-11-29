@@ -22,7 +22,7 @@ clipboard = "0.5"
 thiserror = "1.0"
 once_cell = "1.13"
 lock_api = "0.4"
-windows = { version = "0.48", features = [
+windows = { version = "0.51", features = [
     "Win32_Foundation",
     "Win32_UI_Input_KeyboardAndMouse",
     "Win32_System_WindowsProgramming",
@@ -32,6 +32,7 @@ windows = { version = "0.48", features = [
     "Win32_System_LibraryLoader",
     "Win32_System_Console",
     "Win32_Graphics_Gdi",
+    "Wdk_System_SystemInformation",    # This one is not needed in 0.52
 ] }
 
 [features]

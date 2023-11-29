@@ -48,13 +48,13 @@ pub fn get_module(module_name: &str) -> HMODULE {
 
 pub fn alloc_console() {
     unsafe {
-        AllocConsole();
+        AllocConsole().unwrap();
     }
 }
 
 pub fn free_console() {
     unsafe {
-        FreeConsole();
+        FreeConsole().unwrap();
     }
 }
 

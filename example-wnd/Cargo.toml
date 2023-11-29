@@ -24,7 +24,7 @@ path = "../egui-opengl-internal"
 features = ["force-compile", "save-blob", "parking-lot"]
 
 [dependencies.windows]
-version = "0.48"
+version = "0.51"
 features = [
     "Win32_UI_WindowsAndMessaging",
     "Win32_Foundation",

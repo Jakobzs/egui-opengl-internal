@@ -228,7 +228,8 @@ impl<T> OpenGLApp<T> {
             GetClientRect(
                 *expect!(self.hwnd.get(), "You need to call init first"),
                 &mut rect,
-            );
+            )
+            .unwrap();
         }
 
         (
