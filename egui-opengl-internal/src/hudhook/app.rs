@@ -1,4 +1,4 @@
-use crate::{input::InputCollector, painter, utils};
+use crate::hudhook::{input::InputCollector, painter, utils};
 use clipboard::{windows_clipboard::WindowsClipboardContext, ClipboardProvider};
 use egui::Context;
 use once_cell::sync::OnceCell;

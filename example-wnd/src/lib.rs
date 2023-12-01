@@ -1,5 +1,5 @@
 use egui::{Color32, Context, Key, Modifiers, RichText, ScrollArea, Slider, Widget};
-use egui_opengl_internal::{utils, OpenGLApp};
+use egui_opengl_internal::hudhook::{utils, OpenGLApp};
 use retour::static_detour;
 use std::{intrinsics::transmute, sync::Once};
 use windows::{
