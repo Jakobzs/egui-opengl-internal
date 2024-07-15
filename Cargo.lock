@@ -193,12 +193,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "ecolor"
-version = "0.27.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "20930a432bbd57a6d55e07976089708d4893f3d556cf42a0d79e9e321fa73b10"
-
-[[package]]
 name = "egui"
 version = "0.26.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -206,20 +200,9 @@ checksum = "5493685c2ca33e06b5ad45ae304b13bc084c395f422268bff1377633552f69ac"
 dependencies = [
  "accesskit",
  "ahash",
- "epaint 0.26.0",
+ "epaint",
  "nohash-hasher",
  "serde",
-]
-
-[[package]]
-name = "egui"
-version = "0.27.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "584c5d1bf9a67b25778a3323af222dbe1a1feb532190e103901187f92c7fe29a"
-dependencies = [
- "ahash",
- "epaint 0.27.2",
- "nohash-hasher",
 ]
 
 [[package]]
@@ -227,7 +210,7 @@ name = "egui-opengl-internal"
 version = "0.1.0"
 dependencies = [
  "clipboard",
- "egui 0.27.2",
+ "egui",
  "gl",
  "lock_api",
  "once_cell",
@@ -243,7 +226,7 @@ version = "0.26.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "34bb4782902b4c314ab3bef2dd8a23c634df2e88978fa358cd2c09fb60bab172"
 dependencies = [
- "egui 0.26.0",
+ "egui",
  "enum-map",
  "image",
  "log",
@@ -265,12 +248,6 @@ checksum = "6ba2475f57a416ce2a05e557f3d18e465c7aef23f3f6da2252b428eaaaaa6a65"
 dependencies = [
  "serde",
 ]
-
-[[package]]
-name = "emath"
-version = "0.27.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e4c3a552cfca14630702449d35f41c84a0d15963273771c6059175a803620f3f"
 
 [[package]]
 name = "enum-map"
@@ -312,32 +289,18 @@ checksum = "b823734a8b7e81302a5f1a8ba041ab4ed7805a43d8dfec4dac0c72b933699bbc"
 dependencies = [
  "ab_glyph",
  "ahash",
- "ecolor 0.26.0",
- "emath 0.26.0",
+ "ecolor",
+ "emath",
  "nohash-hasher",
  "parking_lot",
  "serde",
 ]
 
 [[package]]
-name = "epaint"
-version = "0.27.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b381f8b149657a4acf837095351839f32cd5c4aec1817fc4df84e18d76334176"
-dependencies = [
- "ab_glyph",
- "ahash",
- "ecolor 0.27.2",
- "emath 0.27.2",
- "nohash-hasher",
- "parking_lot",
-]
-
-[[package]]
 name = "example-wnd"
 version = "0.1.0"
 dependencies = [
- "egui 0.26.0",
+ "egui",
  "egui-opengl-internal",
  "egui_extras",
  "image",
