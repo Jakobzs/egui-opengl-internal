@@ -1,5 +1,3 @@
 [workspace]
-members = [
-    "example-wnd",
-    "egui-opengl-internal"
-]
+resolver = "2"
+members = ["example-wnd", "egui-opengl-internal"]
