@@ -52,9 +52,7 @@ fn hk_wgl_swap_buffers(hdc: HDC) -> HRESULT {
         INIT.call_once(|| {
             println!("wglSwapBuffers successfully hooked.");
 
-            APP.init_default(hdc, window, |ctx: &egui::Context, arg: &mut i32| {
-                ui(ctx, arg)
-            });
+            APP.init_default(hdc, window, ui);
 
             OLD_WND_PROC = Some(transmute(SetWindowLongPtrA(
                 window,
